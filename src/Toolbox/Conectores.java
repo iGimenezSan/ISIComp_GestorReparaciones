@@ -21,9 +21,9 @@ import java.util.ArrayList;
 public class Conectores {
     
     private static final String DRIVER = "com.mysql.jdbc.Driver";
-    private static final String BASE_DE_DATOS = "jdbc:mysql://192.168.1.131:3306/gestor_reparaciones";
-    private static final String USUARIO = "Isaac";
-    private static final String PASSWORD = "ReindeerFlotill4";
+    private static final String BASE_DE_DATOS = "jdbc:mysql://isicomputerbcn.com:3306/gestor_reparaciones";
+    private static final String USUARIO = "iGimenezSan";
+    private static final String PASSWORD = "Flotill4";
     
     public void insertarCliente(ObjetoCliente datosCliente) {
         

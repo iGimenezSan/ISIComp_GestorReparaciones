@@ -8,6 +8,7 @@ import Objetos.ObjetoCliente;
 import Toolbox.Conectores;
 import java.util.ArrayList;
 import java.util.Iterator;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -364,6 +365,7 @@ public class FicheroClientes extends javax.swing.JDialog {
     private void botonGrabarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonGrabarClienteActionPerformed
         ObjetoCliente datosCliente = new ObjetoCliente(textboxNIF_GestionClientes.getText(), textboxNombre_GestionClientes.getText(), textboxApellidos_GestionClientes.getText(), textboxDireccion_GestionClientes.getText(), textboxCodPostal_GestionClientes.getText(), textboxPoblacion_GestionClientes.getText(), textboxProvincia_GestionClientes.getText(), textboxTelefono_GestionClientes.getText(), textboxEmail_GestionClientes.getText());
         CONECTORES.insertarCliente(datosCliente);
+        JOptionPane.showMessageDialog(null, "Cliente registado correctamente");
     }//GEN-LAST:event_botonGrabarClienteActionPerformed
 
     private void botonConsultarRegistros_FicheroClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonConsultarRegistros_FicheroClientesActionPerformed
